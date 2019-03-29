@@ -5,6 +5,8 @@
  */
 package pe.continental.appsumar.view;
 
+import pe.continental.appsumar.service.MateService;
+
 /**
  *
  * @author aulas_limno
@@ -25,22 +27,98 @@ public class SumaView extends javax.swing.JFrame {
   // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
   private void initComponents() {
 
+    jLabel1 = new javax.swing.JLabel();
+    txtNumero1 = new javax.swing.JTextField();
+    jLabel2 = new javax.swing.JLabel();
+    txtNumero2 = new javax.swing.JTextField();
+    jLabel3 = new javax.swing.JLabel();
+    txtSuma = new javax.swing.JTextField();
+    btnSumar = new javax.swing.JButton();
+
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
     setTitle("SUMAR");
+
+    jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+    jLabel1.setText("Número 1:");
+
+    txtNumero1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+    jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+    jLabel2.setText("Número 2:");
+
+    txtNumero2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+    jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+    jLabel3.setText("Suma");
+
+    txtSuma.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+    txtSuma.setEnabled(false);
+
+    btnSumar.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+    btnSumar.setText("Sumar");
+    btnSumar.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnSumarActionPerformed(evt);
+      }
+    });
 
     javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
     getContentPane().setLayout(layout);
     layout.setHorizontalGroup(
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGap(0, 561, Short.MAX_VALUE)
+      .addGroup(layout.createSequentialGroup()
+        .addGap(57, 57, 57)
+        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+          .addGroup(layout.createSequentialGroup()
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addComponent(txtNumero1, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
+          .addGroup(layout.createSequentialGroup()
+            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addComponent(txtNumero2, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
+          .addGroup(layout.createSequentialGroup()
+            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addComponent(txtSuma, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        .addGap(61, 61, 61)
+        .addComponent(btnSumar, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
+        .addContainerGap(50, Short.MAX_VALUE))
     );
     layout.setVerticalGroup(
       layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGap(0, 300, Short.MAX_VALUE)
+      .addGroup(layout.createSequentialGroup()
+        .addGap(60, 60, 60)
+        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+          .addComponent(btnSumar, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+          .addGroup(layout.createSequentialGroup()
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+              .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+              .addComponent(txtNumero1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+              .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+              .addComponent(txtNumero2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+              .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+              .addComponent(txtSuma, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))))
+        .addContainerGap(82, Short.MAX_VALUE))
     );
 
     pack();
   }// </editor-fold>//GEN-END:initComponents
+
+  private void btnSumarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumarActionPerformed
+    // Datos
+    int num1 = Integer.parseInt( txtNumero1.getText() );
+    int num2 = Integer.parseInt( txtNumero2.getText() );
+    // Proceso
+    int suma = MateService.sumar(num1, num2);
+    // Reporte
+    String repo = num1 + " + " + num2 + " = " + suma;
+    txtSuma.setText(repo);
+  }//GEN-LAST:event_btnSumarActionPerformed
 
   /**
    * @param args the command line arguments
@@ -78,5 +156,12 @@ public class SumaView extends javax.swing.JFrame {
   }
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
+  private javax.swing.JButton btnSumar;
+  private javax.swing.JLabel jLabel1;
+  private javax.swing.JLabel jLabel2;
+  private javax.swing.JLabel jLabel3;
+  private javax.swing.JTextField txtNumero1;
+  private javax.swing.JTextField txtNumero2;
+  private javax.swing.JTextField txtSuma;
   // End of variables declaration//GEN-END:variables
 }
