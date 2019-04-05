@@ -1,0 +1,9 @@
+PROYECTO 01
+===============================
+Desarrollar una aplicación que
+permita calcular el promedio
+de un estudiante y determinar
+si aprueba o desaprueba el curso.
+
+Son 4 notas y se elimina la menor.
+
