@@ -1,0 +1,9 @@
+Un alumno tiene 4 notas, luego se le da la 
+opción de presentar un ensayo para remplazar 
+la nota más baja se pide:
+
+- El promedio del alumno con las 4 notas iniciales.
+- Mostrar la nota más baja.
+- Mostrar su nuevo promedio.
+
+
