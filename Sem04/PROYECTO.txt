@@ -1,0 +1,22 @@
+PROYECTO
+======================================
+
+"MERCADOS GENERALES SAC" esta aplicando un 
+descuento por cantidad de productos que el
+cliente compra, segun la siguiente tabla:
+
+CANTIDAD        PORC. DCTO.
+--------------------------------------
+x <= 12             0
+12 < x <= 24        5
+24 < x <= 36        8
+x > 36              10
+--------------------------------------
+
+El descuento se aplica al precio de venta.
+
+Desarrollar una aplicación que permita calcular
+el descuento y el importe de venta.
+
+
+
