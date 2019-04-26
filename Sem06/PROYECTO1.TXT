@@ -1,0 +1,23 @@
+PROYECTO
+-----------------------------------------
+Desarrollar un programa que descomponga
+un importe de soles en billetes de 200,
+100, 50, 20 y 10 Soles, el resto lo debe
+descompones en monedas 5 y 1 sol.
+
+Ejemplo
+--------------------
+Importe: 1377
+
+Repuesta:
+Billetes de 200: 6
+Billetes de 100: 1
+Billetes de 50:  1
+Billetes de 20:  1
+Billetes de 10:  0
+Monedas de 5:    1
+Monedas de 1:    2
+
+
+
+

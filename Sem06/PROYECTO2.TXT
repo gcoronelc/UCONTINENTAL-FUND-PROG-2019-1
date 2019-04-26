@@ -1,0 +1,19 @@
+PROYECTO
+--------------------------------------
+Desarrollar un software que permita
+encontrar el MCD y MCM de dos numeros
+enteros.
+
+EJEMPLO:
+---------
+
+Datos:
+  Número 1: 15
+  Número 2: 20
+  
+Reporte
+  MCD: 5
+  MCM: 60
+  
+  
+
