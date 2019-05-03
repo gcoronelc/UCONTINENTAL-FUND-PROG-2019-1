@@ -1,0 +1,31 @@
+La SUNAT esta lanzado una campaña 
+denominada "AYUDA A TU PUEBLO".
+
+Esta campaña consiste en donar un 
+porcentaje del consumo a realizar 
+obras en beneficio del deporte.
+
+El siguiente cuadro permite calcular
+el porcentaje donado por rangos de consmo.
+
+El rango de consumo se expresa en minutos.
+El costo por minuto esta expresado en Soles.
+
+RANGO          COSTO          PORCENTAJE
+DE CONSUMO     POR MINUTO     PARA DONACION
+---------------------------------------------
+01 - 50        1.30           0.018 %
+51 - 80        1.20           0.020 %
+81 - 150       1.10           0.025 %
+151 - 300      1.00           0.030 %
+301 - a mas    0.70           0.040 %
+---------------------------------------------
+
+Desarrollar un programa que permita calcular 
+el importe a pagar y el importe para donación.
+
+
+
+
+
+
