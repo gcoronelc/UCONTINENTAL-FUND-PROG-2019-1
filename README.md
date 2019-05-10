@@ -15,7 +15,7 @@
 - Docente: Eric Gustavo Coronel Castillo
 - Blog: www.desarrollasoftware.com
 - Canal Youtube: https://www.youtube.com/c/DesarrollaSoftware
-- Correo: gcoronelc@gmail.com
+- Correo: ecoronel@continental.edu.pe
 - Curso Relacionado: https://www.udemy.com/java-orientado-a-objetos/
 
 # RECURSOS RECOMENDADOS
