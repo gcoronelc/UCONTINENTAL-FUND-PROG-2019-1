@@ -1,0 +1,14 @@
+Se requiere un programa para calcular 
+el importe que debe pagar un consumo
+de energia electrica.
+
+Se sabe que el costo es de la sgte. forma:
+
+Caso  Rango            costo por KW
+----------------------------------------------
+1     0   - 100        0.40
+2     101 - 200        0.50
+3     201 - 300        0.60
+4     301 - 400        0.70
+5     400 - a mas      0.80
+--------------------------------------------
