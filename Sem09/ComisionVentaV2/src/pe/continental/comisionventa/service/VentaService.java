@@ -6,7 +6,7 @@ public class VentaService {
   public static final String CAT_ADMINISTRACION = "ADMINISTRACION";
   public static final String CAT_OFIMATICA = "OFIMATICA";
   public static final String CAT_PROGRAMACION = "PROGRAMACION";
-  public static final String CAT_OTROS = "OTROS";
+  public static final String CAT_OTROS = "OTROS TEMAS";
 
   public static double determinarTotal(String categoria, int participante) {
     // Variable
@@ -27,7 +27,7 @@ public class VentaService {
         break;
     }
     // Reporte
-    return total;
+    return truncar2Dec(total);
   }
 
   public static double determinarImporte(String categoria, int participante) {
@@ -49,8 +49,7 @@ public class VentaService {
         break;
     }
     // REPORTE
-    return importe;
-
+    return truncar2Dec(importe);
   }
 
   public static double determinarImpuesto(String categoria, int participante) {
@@ -72,10 +71,10 @@ public class VentaService {
         break;
     }
     // REPORTE
-    return impuesto;
+    return truncar2Dec(impuesto);
   }
 
-  public static double determinarComision(String categoria,int participante) {
+  public static double determinarComision(String categoria, int participante) {
     //VARIABLE
     double comision = 0.0;
     //PROCESO
@@ -94,9 +93,9 @@ public class VentaService {
         break;
     }
     //reporte
-    return comision;
+    return truncar2Dec(comision);
   }
-  
+
   public static double determinarPrecio(String categoria) {
     //VARIABLE
     double precio = 0.0;
@@ -116,7 +115,16 @@ public class VentaService {
         break;
     }
     //reporte
-    return precio;
+    return truncar2Dec(precio);
   }
-  
+
+  private static double truncar2Dec(double dato) {
+    // Proceso
+    dato = dato * 100;
+    dato = Math.round(dato) * 1.0;
+    dato = dato / 100.0;
+    // Reporte
+    return dato;
+  }
+
 }
