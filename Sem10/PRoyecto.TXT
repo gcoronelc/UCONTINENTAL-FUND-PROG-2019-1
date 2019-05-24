@@ -1,0 +1,32 @@
+Realizar un proyecto para calcular
+el MCD y MCM de dos números.
+
+ANALISIS
+--------
+
+La solucion se realizará utilizando
+un objeto de tipo DTO.
+
+Un solo servicio para realizar 
+los dos calculos.
+
+Son dos datos:
+  - num1 : int
+  - num2 : int
+  
+Resultado
+  - mcd : int 
+  - mcm : int
+
+Tanto los datos y el resultado
+se encapsula en un objeto DTO.
+   
+
+
+
+Revisar:
+
+http://gcoronelc.blogspot.com/2016/11/programando-pensando-en-servicios-parte.html
+http://gcoronelc.blogspot.com/2016/11/prog-pensando-en-servicios-parte-2.html
+https://youtu.be/MzFfkeuRAd8
+
