@@ -37,6 +37,10 @@
 
 [![Verificación de NetBeans](http://img.youtube.com/vi/1GfoIAs3TMM/0.jpg)](http://www.youtube.com/watch?v=1GfoIAs3TMM "Verificación de NetBeans")
 
+## Clases y Ojetos 
+
+[![JAVA FUNDAMENTOS: CLASES Y OBJETOS](http://img.youtube.com/vi/kmK6lUeIWA8/0.jpg)](http://www.youtube.com/watch?v=kmK6lUeIWA8 "JAVA FUNDAMENTOS: CLASES Y OBJETOS")
+
 ## Un Enfoque Orientado a Servicios
 
 [![JAVA FUNDAMENTOS: UN ENFOQUE ORIENTADO A SERVICIOS](http://img.youtube.com/vi/MzFfkeuRAd8/0.jpg)](http://www.youtube.com/watch?v=MzFfkeuRAd8 "JAVA FUNDAMENTOS: UN ENFOQUE ORIENTADO A SERVICIOS")
