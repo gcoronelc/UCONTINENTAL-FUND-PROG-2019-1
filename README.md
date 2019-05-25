@@ -18,6 +18,13 @@
 - Correo: ecoronel@continental.edu.pe
 - Curso Relacionado: https://www.udemy.com/java-orientado-a-objetos/
 
+# VIDEOS INICIALES
+
+## Instalación de Java JDK
+
+[![JAVA JDK](http://img.youtube.com/vi/jl0pQ9KhLio/0.jpg)](http://www.youtube.com/watch?v=jl0pQ9KhLio "JAVA JDK")
+
+
 # RECURSOS RECOMENDADOS
 
 - Curso de Git: https://www.udemy.com/git-bash/
