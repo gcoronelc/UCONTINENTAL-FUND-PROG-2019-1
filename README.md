@@ -33,9 +33,11 @@
 [![Instalación de NetBeans](http://img.youtube.com/vi/COtmPbwhIjg/0.jpg)](http://www.youtube.com/watch?v=COtmPbwhIjg "Instalación de NetBeans")
 
 
-## Demo
-{media}(youtube::-pdYK9Xg8Jw::420)
+## Verificación de NetBeans
 
+https://youtu.be/1GfoIAs3TMM
+
+[[youtube-{16by9}-{1GfoIAs3TMM}]]
 
 # RECURSOS RECOMENDADOS
 
