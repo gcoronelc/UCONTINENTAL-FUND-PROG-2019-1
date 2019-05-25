@@ -22,7 +22,19 @@
 
 ## Instalación de Java JDK
 
-[![JAVA JDK](http://img.youtube.com/vi/jl0pQ9KhLio/0.jpg)](http://www.youtube.com/watch?v=jl0pQ9KhLio "JAVA JDK")
+[![INSTALACIÓN JAVA JDK](http://img.youtube.com/vi/jl0pQ9KhLio/0.jpg)](http://www.youtube.com/watch?v=jl0pQ9KhLio "JAVA JDK")
+
+## Verificación de Java JDK 
+
+[![Verificación JAVA JDK](http://img.youtube.com/vi/PjmX9_ABLig/0.jpg)](http://www.youtube.com/watch?v=PjmX9_ABLig "Verificación JAVA JDK")
+
+## Instalación de NetBeans 
+
+[![Instalación de NetBeans](http://img.youtube.com/vi/COtmPbwhIjg/0.jpg)](http://www.youtube.com/watch?v=COtmPbwhIjg "Instalación de NetBeans")
+
+
+## Demo
+{media}(youtube::-pdYK9Xg8Jw::420)
 
 
 # RECURSOS RECOMENDADOS
