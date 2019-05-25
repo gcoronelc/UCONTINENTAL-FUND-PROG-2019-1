@@ -35,9 +35,11 @@
 
 ## Verificación de NetBeans
 
-https://youtu.be/1GfoIAs3TMM
+[![Verificación de NetBeans](http://img.youtube.com/vi/1GfoIAs3TMM/0.jpg)](http://www.youtube.com/watch?v=1GfoIAs3TMM "Verificación de NetBeans")
 
-[[youtube-{16by9}-{1GfoIAs3TMM}]]
+## Un Enfoque Orientado a Servicios
+
+[![JAVA FUNDAMENTOS: UN ENFOQUE ORIENTADO A SERVICIOS](http://img.youtube.com/vi/MzFfkeuRAd8/0.jpg)](http://www.youtube.com/watch?v=MzFfkeuRAd8 "JAVA FUNDAMENTOS: UN ENFOQUE ORIENTADO A SERVICIOS")
 
 # RECURSOS RECOMENDADOS
 
