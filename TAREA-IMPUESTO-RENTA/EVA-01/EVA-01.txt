@@ -1,0 +1,8 @@
+TAREA UNI. 03 - 01
+Vencimiento Wednesday, 22 de May de 2019, 23:59
+Se necesita un programa que permita a un profesional calcular el impuesto a la renta anual 2018.
+
+Por ejemplo, si los ingresos totales de un profesional es de 178,000.00 Soles, cuanto es lo que debe pagar 
+de impuesto a la renta.
+
+Consultar en la página de la SUNAT como se debe hacer el calculo.
