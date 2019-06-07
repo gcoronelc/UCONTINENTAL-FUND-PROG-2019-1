@@ -1,7 +1,7 @@
 
-package pe.continental.boletadepagodeunvendedor.prueba;
+package pe.continental.boleta.prueba;
 
-import pe.continental.boletadepagodeunvendedor.service.BoletaDePagoDeUnVendedorService;
+import pe.continental.boleta.service.BoletaDePagoDeUnVendedorService;
 
 /**
  *

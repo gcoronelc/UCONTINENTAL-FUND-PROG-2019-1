@@ -1,5 +1,5 @@
 
-package pe.continental.boletadepagodeunvendedor.service;
+package pe.continental.boleta.service;
 
 /**
  *
