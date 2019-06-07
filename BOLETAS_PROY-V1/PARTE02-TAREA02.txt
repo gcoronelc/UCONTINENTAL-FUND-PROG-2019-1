@@ -1,0 +1,34 @@
+Realizar el análisis y el desarrollo
+de un programa para calcular la boleta
+de pago de un colaborador.
+
+Grupo 1:
+Angie y Sebastian
+Un obrero de construcción civil.
+
+Grupo 2:
+Jonatan y Jazmin
+Un obrero docente universitario de universidad publica.
+
+Grupo 3:
+Piero y Diana
+Funcionario del estado.
+
+Grupo 4:
+Richard y Edwin
+De un policia.
+
+Grupo 5:
+Oliver y Cinthia
+De un empleado de un empleado de la Universidad Cotinental.
+
+Grupo 6:
+Abanto, Stiv y Lizbeth
+De un vendedor de SAGA.
+
+
+
+
+
+
+
