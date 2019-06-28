@@ -18,13 +18,13 @@ public class Prueba03 {
         dto.setUbicacion(EventoPeruService.PROVINCIA);
 
         // Proceso :
-        EventoPeruService eventoPeruService = new EventoPeruService();
-        dto = eventoPeruService.calcular(dto);
+        dto = EventoPeruService.procesarEvento(dto);
 
         // Reporte:
         System.out.println("DATOS: ");
         System.out.println("Capacidad del Local: " + dto.getCapacidad());
         System.out.println("Categoria: " + dto.getCategoria());
+        System.out.println("Ubicación: " + dto.getUbicacion());
         System.out.println("REPORTE: ");
         System.out.println("Publicidad: " + dto.getIngresos());
         System.out.println("Logistica: " + dto.getLogistica());

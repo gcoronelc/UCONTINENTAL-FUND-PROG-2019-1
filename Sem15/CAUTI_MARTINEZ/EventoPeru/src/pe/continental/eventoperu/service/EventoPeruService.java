@@ -18,58 +18,18 @@ public class EventoPeruService {
   public static final String LIMA = "LIMA";
   public static final String PROVINCIA = "PROVINCIA";
 
-  public static EventoPeruDto calcular(EventoPeruDto dto) {
-
-    // PROCESOS:
-    double ingresos = 0;
-    switch (dto.getCategoria()) {
-      case LOCAL:
-        ingresos = 0;
-        if (dto.getCapacidad() >= 15000) {
-          ingresos = dto.getCapacidad() * 10.0;
-        }
-        break;
-      case INTERNACIONAL:
-        ingresos = 0;
-        if (dto.getCapacidad() >= 15000) {
-          ingresos = dto.getCapacidad() * 20.0;
-        }
-        break;
-      case PREMIUN:
-        ingresos = 0;
-        if (dto.getCapacidad() >= 15000) {
-          ingresos = dto.getCapacidad() * 10.0;
-        }
-        break;
-    }
+  public static EventoPeruDto procesarEvento(EventoPeruDto dto) {
+    // Paso 1: Calculo de ingresos
+    double ingresos = calcularIngresos(dto.getCategoria(), dto.getCapacidad());
+    // Paso 2: Calculo de gastos
     double publicidad = ingresos * 0.07;
     double logistica = ingresos * 0.10;
-    double transporte = 0;
-    switch (dto.getUbicacion()) {
-      case LIMA:
-        transporte = 0;
-        break;
-      case PROVINCIA:
-        transporte = 0.04 * ingresos;
-        break;
-
-    }
-    double pagoArtista = 0;
-    switch (dto.getCategoria()) {
-      case LOCAL:
-        pagoArtista = 30000.0;
-        break;
-      case INTERNACIONAL:
-        pagoArtista = 70000.0;
-        break;
-      case PREMIUN:
-        pagoArtista = 100000.0;
-        break;
-    }
+    double transporte = calculoTransporte(dto.getUbicacion(), ingresos);
+    double pagoArtista = calcularPagoArtista(dto.getCategoria());
     double gastos = publicidad + logistica + transporte + pagoArtista;
+    // Paso 3: Rentabilidad
     double rentabilidad = ingresos - gastos;
-
-    // REPORTE:
+    // Paso 4: Reporte
     dto.setIngresos(Trunco2Deci(ingresos));
     dto.setPublicidad(Trunco2Deci(publicidad));
     dto.setLogistica(Trunco2Deci(logistica));
@@ -77,9 +37,7 @@ public class EventoPeruService {
     dto.setPagoArtista(Trunco2Deci(pagoArtista));
     dto.setGastos(Trunco2Deci(gastos));
     dto.setRentabilidad(Trunco2Deci(rentabilidad));
-
     return dto;
-
   }
 
   public static double Trunco2Deci(double dato) {
@@ -90,4 +48,53 @@ public class EventoPeruService {
     // Reporte
     return dato;
   }
+
+  private static double calcularIngresos(String categoria, int capacidad) {
+    double ingresos = 0.0;
+    switch (categoria) {
+      case LOCAL:
+        ingresos = 0;
+        ingresos = capacidad * 10.0;
+        break;
+      case INTERNACIONAL:
+        ingresos = 0;
+        ingresos = capacidad * 20.0;
+        break;
+      case PREMIUN:
+        ingresos = 0;
+        ingresos = capacidad * 10.0;
+        break;
+    }
+    return ingresos;
+  }
+
+  private static double calculoTransporte(String ubicacion, double ingresos) {
+    double transporte = 0.0;
+    switch (ubicacion) {
+      case LIMA:
+        transporte = 0;
+        break;
+      case PROVINCIA:
+        transporte = 0.04 * ingresos;
+        break;
+    }
+    return transporte;
+  }
+
+  private static double calcularPagoArtista(String categoria) {
+    double pagoArtista = 0.0;
+    switch (categoria) {
+      case LOCAL:
+        pagoArtista = 30000.0;
+        break;
+      case INTERNACIONAL:
+        pagoArtista = 70000.0;
+        break;
+      case PREMIUN:
+        pagoArtista = 100000.0;
+        break;
+    }
+    return pagoArtista;
+  }
+  
 }

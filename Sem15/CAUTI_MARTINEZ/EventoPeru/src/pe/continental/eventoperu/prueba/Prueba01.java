@@ -18,8 +18,7 @@ public class Prueba01 {
         dto.setUbicacion(EventoPeruService.LIMA);
 
         // Proceso :
-        EventoPeruService eventoPeruService = new EventoPeruService();
-        dto = eventoPeruService.calcular(dto);
+        dto = EventoPeruService.procesarEvento(dto);
 
         // Reporte:
         System.out.println("DATOS: ");
@@ -32,9 +31,6 @@ public class Prueba01 {
         System.out.println("Pago al Artista: " + dto.getPagoArtista());
         System.out.println("Gastos: " + dto.getGastos());
         System.out.println("Rentabilidad: " + dto.getRentabilidad());
-        
-        
-        
         
     }
 }
