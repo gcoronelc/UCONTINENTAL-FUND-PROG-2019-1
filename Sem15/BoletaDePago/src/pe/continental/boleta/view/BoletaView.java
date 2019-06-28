@@ -5,6 +5,8 @@
  */
 package pe.continental.boleta.view;
 
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 import pe.continental.boleta.dto.BoletaDto;
 import pe.continental.boleta.service.BoletaService;
 
@@ -549,12 +551,20 @@ public class BoletaView extends javax.swing.JFrame {
 
     private void btnProcesarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProcesarActionPerformed
 
+      // Validar datos
+      if (!validarDatos()) {
+        JOptionPane.showMessageDialog(this,
+                "Datos no son correctos.",
+                "ERROR", JOptionPane.ERROR_MESSAGE);
+        return;
+      }
+
       // DATOS
       int diasTrabajados = Integer.parseInt(txtDiasTrabajados.getText());
       int diasFeriados = Integer.parseInt(txtDiasFeriados.getText());
-      double pagoDiario = Integer.parseInt(txtPagoDiario.getText());
-      double costoDePasaje = Integer.parseInt(txtCostoDePasaje.getText());
-      double ventaTotal = Integer.parseInt(txtVentaTotal.getText());
+      double pagoDiario = Double.parseDouble(txtPagoDiario.getText());
+      double costoDePasaje = Double.parseDouble(txtCostoDePasaje.getText());
+      double ventaTotal = Double.parseDouble(txtVentaTotal.getText());
 
       BoletaDto dto = new BoletaDto();
       dto.setDias(diasTrabajados);
@@ -584,13 +594,12 @@ public class BoletaView extends javax.swing.JFrame {
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
 
-      txtDiasTrabajados.setText(null);
-      txtDiasFeriados.setText(null);
-      txtPagoDiario.setText(null);
-      txtPagoFeriado.setText(null);
-      txtCostoDePasaje.setText(null);
-      txtVentaTotal.setText(null);
-
+      txtDiasTrabajados.setText("");
+      txtDiasFeriados.setText("");
+      txtPagoDiario.setText("");
+      txtPagoFeriado.setText("");
+      txtCostoDePasaje.setText("");
+      txtVentaTotal.setText("");
 
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
@@ -686,4 +695,63 @@ public class BoletaView extends javax.swing.JFrame {
   private javax.swing.JTextField txtRepoSueldoNeto;
   private javax.swing.JTextField txtVentaTotal;
   // End of variables declaration//GEN-END:variables
+
+  private boolean validarDatos() {
+    boolean rpta = true;
+    // Inicio proceso
+    boolean v1 = esEnteroPositivo(txtDiasTrabajados);
+    boolean v2 = esEntero(txtDiasFeriados);
+    boolean v3 = esDecimalPositivo(txtCostoDePasaje);
+    boolean v4 = esDecimalPositivo(txtPagoDiario);
+    boolean v5 = esDecimalPositivo(txtPagoFeriado);
+    boolean v6 = esDecimal(txtVentaTotal);
+    rpta = (v1 && v2 && v3 && v4 && v5 && v6);
+    // Fin proceso
+    return rpta;
+  }
+
+  private boolean esEntero(JTextField dato) {
+    boolean rpta = true;
+    try {
+      int n = Integer.parseInt(dato.getText());
+      rpta = (n >= 0);
+    } catch (Exception e) {
+      rpta = false;
+    }
+    return rpta;
+  }
+
+  private boolean esEnteroPositivo(JTextField dato) {
+    boolean rpta = true;
+    try {
+      int n = Integer.parseInt(dato.getText());
+      rpta = (n > 0);
+    } catch (Exception e) {
+      rpta = false;
+    }
+    return rpta;
+  }
+
+  private boolean esDecimal(JTextField dato) {
+    boolean rpta = true;
+    try {
+      double n = Double.parseDouble(dato.getText());
+      rpta = (n >= 0.0);
+    } catch (Exception e) {
+      rpta = false;
+    }
+    return rpta;
+  }
+
+  private boolean esDecimalPositivo(JTextField dato) {
+    boolean rpta = true;
+    try {
+      double n = Double.parseDouble(dato.getText());
+      rpta = (n > 0.0);
+    } catch (Exception e) {
+      rpta = false;
+    }
+    return rpta;
+  }
+
 }
