@@ -5,129 +5,128 @@
  */
 package pe.continental.apptodolosabe.dto;
 
-
 public class AppTodoLoSabeDto {
-    //datos
-    private int cantidad;
-    private String curso;
-    private String nivel;
-   
-    //resultados
-    
-    private double duracion;
-    private double costo;
-    private double pagoHora;
-    private double ingreso;
-   
-    private double pagoProfesor;
-    private double publicidad;
-    private double logistica;
-    private double material;
-    private double gastos;
-    private double utilidad;
+	//datos
 
-    public double getPagoProfesor() {
-        return pagoProfesor;
-    }
+	private int cantidad;
+	private String curso;
+	private String nivel;
 
-    public void setPagoProfesor(double pagoProfesor) {
-        this.pagoProfesor = pagoProfesor;
-    }
+	//resultados
+	private double duracion;
+	private double costo;
+	private double pagoHora;
+	private double ingreso;
 
-    public double getPagoHora() {
-        return pagoHora;
-    }
+	private double pagoProfesor;
+	private double publicidad;
+	private double logistica;
+	private double material;
+	private double gastos;
+	private double utilidad;
 
-    public void setPagoHora(double pagoHora) {
-        this.pagoHora = pagoHora;
-    }
-    
-    
- public String getCurso() {
-        return curso;
-    }
+	public double getPagoProfesor() {
+		return pagoProfesor;
+	}
 
-    public void setCurso(String curso) {
-        this.curso = curso;
-    }
-    
-    
-    public double getUtilidad() {
-        return utilidad;
-    }
+	public void setPagoProfesor(double pagoProfesor) {
+		this.pagoProfesor = pagoProfesor;
+	}
 
-    public void setUtilidad(double utilidad) {
-        this.utilidad = utilidad;
-    }
-    public int getCantidad() {
-        return cantidad;
-    }
+	public double getPagoHora() {
+		return pagoHora;
+	}
 
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
-    }
+	public void setPagoHora(double pagoHora) {
+		this.pagoHora = pagoHora;
+	}
 
-    public String getNivel() {
-        return nivel;
-    }
+	public String getCurso() {
+		return curso;
+	}
 
-    public void setNivel(String nivel) {
-        this.nivel = nivel;
-    }
+	public void setCurso(String curso) {
+		this.curso = curso;
+	}
 
-    public double getDuracion() {
-        return duracion;
-    }
+	public double getUtilidad() {
+		return utilidad;
+	}
 
-    public void setDuracion(double duracion) {
-        this.duracion = duracion;
-    }
+	public void setUtilidad(double utilidad) {
+		this.utilidad = utilidad;
+	}
 
-    public double getCosto() {
-        return costo;
-    }
+	public int getCantidad() {
+		return cantidad;
+	}
 
-    public void setCosto(double costo) {
-        this.costo = costo;
-    }
- public double getGastos() {
-        return gastos;
-    }
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
+	}
 
-    public void setGastos(double gastos) {
-        this.gastos = gastos;
-    }
-    public double getIngreso() {
-        return ingreso;
-    }
+	public String getNivel() {
+		return nivel;
+	}
 
-    public void setIngreso(double ingreso) {
-        this.ingreso = ingreso;
-    }
+	public void setNivel(String nivel) {
+		this.nivel = nivel;
+	}
 
-    public double getPublicidad() {
-        return publicidad;
-    }
+	public double getDuracion() {
+		return duracion;
+	}
 
-    public void setPublicidad(double publicidad) {
-        this.publicidad = publicidad;
-    }
+	public void setDuracion(double duracion) {
+		this.duracion = duracion;
+	}
 
-    public double getLogistica() {
-        return logistica;
-    }
+	public double getCosto() {
+		return costo;
+	}
 
-    public void setLogistica(double logistica) {
-        this.logistica = logistica;
-    }
+	public void setCosto(double costo) {
+		this.costo = costo;
+	}
 
-    public double getMaterial() {
-        return material;
-    }
+	public double getGastos() {
+		return gastos;
+	}
 
-    public void setMaterial(double material) {
-        this.material = material;
-    }
-    
-    
+	public void setGastos(double gastos) {
+		this.gastos = gastos;
+	}
+
+	public double getIngreso() {
+		return ingreso;
+	}
+
+	public void setIngreso(double ingreso) {
+		this.ingreso = ingreso;
+	}
+
+	public double getPublicidad() {
+		return publicidad;
+	}
+
+	public void setPublicidad(double publicidad) {
+		this.publicidad = publicidad;
+	}
+
+	public double getLogistica() {
+		return logistica;
+	}
+
+	public void setLogistica(double logistica) {
+		this.logistica = logistica;
+	}
+
+	public double getMaterial() {
+		return material;
+	}
+
+	public void setMaterial(double material) {
+		this.material = material;
+	}
+
 }
